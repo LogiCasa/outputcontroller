@@ -1,4 +1,4 @@
-# Logi.Casa Output Controller
+# About
 
 Welcome to the Logi.Casa Setup Page.
 
