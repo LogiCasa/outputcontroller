@@ -2,7 +2,7 @@
   "chipFamily": "ESP32",
   "parts": [
     {
-      "path": "project-template-esp32/outputcontroller.bin",
+      "path": "outputcontroller-esp32/outputcontroller-esp32.bin",
       "offset": 0
     }
   ]

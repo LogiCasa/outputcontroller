@@ -1,6 +1,6 @@
 {
-  "name": "Output Controller",
-  "version": "1.0",
+  "name": "outputcontroller",
+  "version": "",
   "home_assistant_domain": "esphome",
   "new_install_skip_erase": false,
   "builds": [
@@ -8,10 +8,10 @@
       "chipFamily": "ESP32",
       "parts": [
         {
-          "path": "project-template-esp32/outputcontroller.bin",
+          "path": "outputcontroller-esp32/outputcontroller-esp32.bin",
           "offset": 0
         }
       ]
-    }    
+    }
   ]
 }
