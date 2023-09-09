@@ -468,9 +468,9 @@ output:
         then:
           - light.turn_on: 
               id: statusled
-              green: 0.0
+              green: 1.0
               red: 0.0
-              blue: 1.0              
+              blue: 0.0              
         else:
           - light.turn_on: 
               id: statusled
