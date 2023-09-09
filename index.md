@@ -1,4 +1,4 @@
-# Logi.Casa
+# About
 
 Welcome to the Logi.Casa Setup Page.
 
