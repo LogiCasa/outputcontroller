@@ -102,131 +102,131 @@ light:
     restore_mode: ALWAYS_ON
     effects:
       - pulse:
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_01"
     id: OUTPUT_01
     output: DO_01
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_02"
     id: OUTPUT_02
     output: DO_02
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_03"
     id: OUTPUT_03
     output: DO_03
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_04"
     id: OUTPUT_04
     output: DO_04
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_05"
     id: OUTPUT_05
     output: DO_05
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_06"
     id: OUTPUT_06
     output: DO_06
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_07"
     id: OUTPUT_07
     output: DO_07
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_08"
     id: OUTPUT_08
     output: DO_08
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_09"
     id: OUTPUT_09
     output: DO_09
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_10"
     id: OUTPUT_10
     output: DO_10
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_11"
     id: OUTPUT_11
     output: DO_11
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_12"
     id: OUTPUT_12
     output: DO_12
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_13"
     id: OUTPUT_13
     output: DO_13
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_14"
     id: OUTPUT_14
     output: DO_14
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_15"
     id: OUTPUT_15
     output: DO_15
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_16"
     id: OUTPUT_16
     output: DO_16
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_17"
     id: OUTPUT_17
     output: DO_17
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_18"
     id: OUTPUT_18
     output: DO_18
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_19"
     id: OUTPUT_19
     output: DO_19
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_20"
     id: OUTPUT_20
     output: DO_20
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_21"
     id: OUTPUT_21
     output: DO_21
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_22"
     id: OUTPUT_22
     output: DO_22
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_23"
     id: OUTPUT_23
     output: DO_23
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_24"
     id: OUTPUT_24
     output: DO_24
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_25"
     id: OUTPUT_25
     output: DO_25
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_26"
     id: OUTPUT_26
     output: DO_26
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_27"
     id: OUTPUT_27
     output: DO_27
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_28"
     id: OUTPUT_28
     output: DO_28
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_29"
     id: OUTPUT_29
     output: DO_29
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_30"
     id: OUTPUT_30
     output: DO_30
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_31"
     id: OUTPUT_31
     output: DO_31
-  - platform: output
+  - platform: binary
     name: "${name}_OUTPUT_32"
     id: OUTPUT_32
     output: DO_32
