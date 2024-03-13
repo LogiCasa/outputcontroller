@@ -102,7 +102,7 @@ light:
     restore_mode: ALWAYS_ON
     effects:
       - pulse:
-    - platform: output
+  - platform: output
     name: "${name}_OUTPUT_01"
     id: OUTPUT_01
     output: DO_01
