@@ -80,6 +80,14 @@ mcp23017:
   - id: "mcp_hub2"
     address: 0x24
 
+button:
+  - platform: restart
+    name: "Reboot ${name}"
+    id: reboot
+
+  - platform: factory_reset
+    name: Restart with Factory Default Settings
+
 light:
   - platform: status_led
     name: "status led"
@@ -94,17 +102,7 @@ light:
     restore_mode: ALWAYS_ON
     effects:
       - pulse:
-
-button:
-  - platform: restart
-    name: "Reboot ${name}"
-    id: reboot
-
-  - platform: factory_reset
-    name: Restart with Factory Default Settings
-
-switch:
-  - platform: output
+    - platform: output
     name: "${name}_OUTPUT_01"
     id: OUTPUT_01
     output: DO_01
