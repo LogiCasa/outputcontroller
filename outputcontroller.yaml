@@ -14,8 +14,8 @@ esphome:
   # This will allow for (future) project identification,
   # configuration and updates.
   project:
-    name: logicasa.output-controller
-    version: "1.0"
+    name: logicasa.outputcontroller
+    version: "2.0"
 
 
 esp32:
