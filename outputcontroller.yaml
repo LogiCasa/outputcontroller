@@ -23,6 +23,7 @@ esp32:
 
 # To be able to get logs from the device via serial and api.
 logger:
+  level: WARN
 
 # API is a requirement of the dashboard import.
 api:
@@ -80,6 +81,37 @@ mcp23017:
   - id: "mcp_hub2"
     address: 0x24
 
+interval:
+  - interval: 2s
+    then:
+      if:
+        condition:
+          wifi.connected:
+        then:
+          - if:
+              condition:
+                api.connected:
+              then:
+                - light.turn_on:
+                    id: statusled
+                    green: 1.0
+                    red: 0.0
+                    blue: 0.0 
+              else:
+                - light.turn_on:
+                    id: statusled
+                    flash_length: 1000ms
+                    green: 1.0
+                    red: 0.0
+                    blue: 0.0
+        else:
+          - light.turn_on:
+              id: statusled
+              flash_length: 1950ms
+              green: 0.0
+              red: 1.0
+              blue: 1.0
+
 button:
   - platform: restart
     name: "Reboot ${name}"
@@ -89,9 +121,6 @@ button:
     name: Restart with Factory Default Settings
 
 light:
-  - platform: status_led
-    name: "status led"
-    output: statusoutput
   - platform: neopixelbus
     variant: WS2812
     pin: 5
@@ -100,8 +129,7 @@ light:
     id: statusled
     icon: "mdi:led-outline"
     restore_mode: ALWAYS_ON
-    effects:
-      - pulse:
+    internal: True
   - platform: binary
     name: "${name}_OUTPUT_01"
     id: OUTPUT_01
