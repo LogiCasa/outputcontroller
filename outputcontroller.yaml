@@ -20,7 +20,9 @@ esphome:
 
 esp32:
   board: nodemcu-32s
-
+  framework:
+    type: esp-idf
+    
 # To be able to get logs from the device via serial and api.
 logger:
   level: WARN
@@ -122,15 +124,16 @@ button:
     name: Restart with Factory Default Settings
 
 light:
-  - platform: neopixelbus
-    variant: WS2812
-    pin: 5
-    num_leds: 1
-    name: "Status LED"
+  - platform: esp32_rmt_led_strip
     id: statusled
-    icon: "mdi:led-outline"
+    name: "Status LED"
+    pin: GPIO5
+    num_leds: 1
+    chipset: WS2812
+    rgb_order: GRB
     restore_mode: ALWAYS_ON
-    internal: True
+    internal: true
+    icon: mdi:led-outline
   - platform: binary
     name: "${name}_OUTPUT_01"
     id: OUTPUT_01
